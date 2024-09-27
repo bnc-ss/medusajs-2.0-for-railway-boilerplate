@@ -52,13 +52,7 @@
     "@medusajs/tax": "preview",
     "@medusajs/user": "preview",
     "@medusajs/workflow-engine-inmemory": "preview",
-    "express": "^4.17.2",
-    "@medusajs/admin-sdk": "preview",
-    "@medusajs/core-flows": "preview",
-    "@medusajs/medusa-cli": "preview",
-    "@medusajs/orchestration": "preview",
-    "@medusajs/utils": "preview",
-    "@medusajs/workflows-sdk": "preview"
+    "express": "^4.17.2"
   },
   "devDependencies": {
     "@medusajs/medusa-cli": "preview",
@@ -74,13 +68,7 @@
     "@types/react": "^18.3.2",
     "prop-types": "^15.8.1",
     "ts-node": "^10.9.2",
-    "typescript": "^5.1.6",
-    "@medusajs/ui-preset": "^1.1.4",
-    "@swc/jest": "^0.2.36",
-    "@types/jest": "^29.5.12",
-    "get-port": "^5.1.0",
-    "jest": "^29.7.0",
-    "medusa-test-utils": "preview"
+    "typescript": "^5.1.6"
   },
   "engines": {
     "node": "22.x",
