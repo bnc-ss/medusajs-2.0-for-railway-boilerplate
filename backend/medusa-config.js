@@ -105,3 +105,10 @@ const completeConfig = {
 
 export default defineConfig(completeConfig);
 export { backendUrl };
+
+// Added modules from B2B template
+    companyModuleService: {
+      resolve: "./modules/company",
+    },
+
+// Added plugins from B2B template
