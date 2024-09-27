@@ -48,6 +48,7 @@
     "webpack": "^5"
   },
   "devDependencies": {
+    "eslint-config-next": "^13.0.0",
     "@babel/core": "^7.17.5",
     "@medusajs/client-types": "preview",
     "@medusajs/ui-preset": "preview",
