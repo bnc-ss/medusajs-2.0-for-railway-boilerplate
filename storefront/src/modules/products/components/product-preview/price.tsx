@@ -1,8 +1,7 @@
-import { AdminPrice } from "@medusajs/types"
 import { Text, clx } from "@medusajs/ui"
+import { VariantPrice } from "types/global"
 
-// TODO: Price needs to access price list type
-export default async function PreviewPrice({ price }: { price: AdminPrice }) {
+export default async function PreviewPrice({ price }: { price: VariantPrice }) {
   if (!price) {
     return null
   }
@@ -17,9 +16,8 @@ export default async function PreviewPrice({ price }: { price: AdminPrice }) {
           {price.original_price}
         </Text>
       )}
-
       <Text
-        className={clx("text-neutral-950 font-medium text-lg", {
+        className={clx("text-ui-fg-muted", {
           "text-ui-fg-interactive": price.price_type === "sale",
         })}
         data-testid="price"
