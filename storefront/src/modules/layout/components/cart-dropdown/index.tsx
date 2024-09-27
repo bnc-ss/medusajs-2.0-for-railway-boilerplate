@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation"
 import { Fragment, useEffect, useRef, useState } from "react"
 
 import { convertToLocale } from "@lib/util/money"
+import { ShoppingBag } from "@medusajs/icons"
 import { HttpTypes } from "@medusajs/types"
 import DeleteButton from "@modules/common/components/delete-button"
 import LineItemOptions from "@modules/common/components/line-item-options"
@@ -81,8 +82,20 @@ const CartDropdown = ({
             className="hover:text-ui-fg-base"
             href="/cart"
             data-testid="nav-cart-link"
-          >{`Cart (${totalItems})`}</LocalizedClientLink>
+          >
+            <div className="transition-fg relative inline-flex w-fit items-center justify-center overflow-hidden outline-none disabled:bg-ui-bg-disabled disabled:border-ui-border-base disabled:text-ui-fg-disabled disabled:shadow-buttons-neutral disabled:after:hidden after:transition-fg after:absolute after:inset-0 after:content-[''] shadow-buttons-neutral text-ui-fg-base after:button-neutral-gradient hover:bg-ui-button-neutral-hover hover:after:button-neutral-hover-gradient active:bg-ui-button-neutral-pressed active:after:button-neutral-pressed-gradient focus-visible:shadow-buttons-neutral-focus txt-compact-small-plus gap-x-1.5 px-3 py-1.5 rounded-2xl bg-ui-bg-subtle">
+              <ShoppingBag />
+
+              {cartState
+                ? convertToLocale({
+                    amount: subtotal,
+                    currency_code: cartState.currency_code,
+                  })
+                : `Cart (${totalItems})`}
+            </div>
+          </LocalizedClientLink>
         </Popover.Button>
+
         <Transition
           show={cartDropdownOpen}
           as={Fragment}
@@ -95,7 +108,7 @@ const CartDropdown = ({
         >
           <Popover.Panel
             static
-            className="hidden small:block absolute top-[calc(100%+1px)] right-0 bg-white border-x border-b border-gray-200 w-[420px] text-ui-fg-base"
+            className="hidden small:block absolute top-[calc(100%+1px)] right-0 bg-white border-x border border-gray-200 w-[420px] text-ui-fg-base mt-1"
             data-testid="nav-cart-dropdown"
           >
             <div className="p-4 flex items-center justify-center">
