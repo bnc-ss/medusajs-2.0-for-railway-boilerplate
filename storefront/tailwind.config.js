@@ -59,7 +59,16 @@ module.exports = {
         "3xl": "2rem",
       },
       fontFamily: {
-        sans: ["var(--font-geist-sans)"],
+        sans: [
+          "Inter",
+          "-apple-system",
+          "BlinkMacSystemFont",
+          "Segoe UI",
+          "Roboto",
+          "Helvetica Neue",
+          "Ubuntu",
+          "sans-serif",
+        ],
       },
       keyframes: {
         ring: {
