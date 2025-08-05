@@ -1,1 +1,0 @@
-{"root":["../src/index.ts","../src/service.ts","../src/migrations/migration20250317090626.ts","../src/migrations/migration20250612144913.ts","../src/models/index.ts","../src/models/onboarding.ts","../src/models/payout-account.ts","../src/models/payout-reversal.ts","../src/models/payout.ts","../src/services/index.ts","../src/services/provider.ts"],"version":"5.8.2"}

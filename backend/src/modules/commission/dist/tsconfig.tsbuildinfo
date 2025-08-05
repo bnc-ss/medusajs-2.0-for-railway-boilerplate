@@ -1,1 +1,0 @@
-{"root":["../src/index.ts","../src/service.ts","../src/migrations/migration20250124152358.ts","../src/migrations/migration20250127073504.ts","../src/models/commission_line.ts","../src/models/commission_rate.ts","../src/models/commission_rule.ts","../src/models/index.ts"],"version":"5.8.2"}
