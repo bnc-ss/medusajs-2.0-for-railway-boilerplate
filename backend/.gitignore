@@ -26,3 +26,5 @@ build
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+!node_modules/@boxncase
+!node_modules/@boxncase/framework

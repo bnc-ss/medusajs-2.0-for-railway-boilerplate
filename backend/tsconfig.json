@@ -15,7 +15,9 @@
     "rootDir": "./",
     "baseUrl": ".",
     "paths": {
-      "*": ["./src/*"]
+      "*": ["./src/*"],
+      "@boxncase/framework": ["./src/modules/framework/index.ts"],
+      "@boxncase/framework/*": ["./src/modules/framework/*"]
     },
     "jsx": "react-jsx",
     "forceConsistentCasingInFileNames": true,
