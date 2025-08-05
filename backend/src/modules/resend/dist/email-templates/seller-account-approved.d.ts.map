@@ -1,0 +1,1 @@
+{"version":3,"file":"seller-account-approved.d.ts","sourceRoot":"","sources":["../../src/email-templates/seller-account-approved.tsx"],"names":[],"mappings":"AAAA,UAAU,kBAAkB;IAC1B,IAAI,EAAE;QACJ,SAAS,EAAE,MAAM,CAAA;KAClB,CAAA;CACF;AAED,eAAO,MAAM,kCAAkC,EAAE,KAAK,CAAC,EAAE,CAAC,QAAQ,CAAC,kBAAkB,CAAC,CAkCrF,CAAA"}

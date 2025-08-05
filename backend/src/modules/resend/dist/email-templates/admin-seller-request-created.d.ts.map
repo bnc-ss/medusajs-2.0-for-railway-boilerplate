@@ -1,0 +1,1 @@
+{"version":3,"file":"admin-seller-request-created.d.ts","sourceRoot":"","sources":["../../src/email-templates/admin-seller-request-created.tsx"],"names":[],"mappings":"AAAA,UAAU,kBAAkB;IAC1B,IAAI,EAAE;QACJ,eAAe,EAAE,MAAM,CAAC;QACxB,WAAW,EAAE,MAAM,CAAA;KACpB,CAAA;CACF;AAED,eAAO,MAAM,sCAAsC,EAAE,KAAK,CAAC,EAAE,CAAC,QAAQ,CAAC,kBAAkB,CAAC,CA8BzF,CAAA"}

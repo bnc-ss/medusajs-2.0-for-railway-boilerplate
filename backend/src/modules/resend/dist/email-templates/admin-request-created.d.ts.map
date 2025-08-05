@@ -1,0 +1,1 @@
+{"version":3,"file":"admin-request-created.d.ts","sourceRoot":"","sources":["../../src/email-templates/admin-request-created.tsx"],"names":[],"mappings":"AAAA,UAAU,kBAAkB;IAC1B,IAAI,EAAE;QACJ,YAAY,EAAE,MAAM,CAAA;QACpB,WAAW,EAAE,MAAM,CAAA;KACpB,CAAA;CACF;AAED,eAAO,MAAM,gCAAgC,EAAE,KAAK,CAAC,EAAE,CAAC,QAAQ,CAAC,kBAAkB,CAAC,CAwBnF,CAAA"}

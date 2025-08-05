@@ -1,0 +1,1 @@
+{"version":3,"file":"seller-product-approved.d.ts","sourceRoot":"","sources":["../../src/email-templates/seller-product-approved.tsx"],"names":[],"mappings":"AAAA,UAAU,kBAAkB;IAC1B,IAAI,EAAE;QACJ,aAAa,EAAE,MAAM,CAAA;KACtB,CAAA;CACF;AAED,eAAO,MAAM,kCAAkC,EAAE,KAAK,CAAC,EAAE,CAAC,QAAQ,CAAC,kBAAkB,CAAC,CAwBrF,CAAA"}

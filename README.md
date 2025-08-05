@@ -1,25 +1,17 @@
 <p align="center">
-  <a href="https://www.medusajs.com">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/59018053/229103275-b5e482bb-4601-46e6-8142-244f531cebdb.svg">
-      <source media="(prefers-color-scheme: light)" srcset="https://user-images.githubusercontent.com/59018053/229103726-e5b529a3-9b3f-4970-8a1f-c6af37f087bf.svg">
-      <img alt="Medusa logo" src="https://user-images.githubusercontent.com/59018053/229103726-e5b529a3-9b3f-4970-8a1f-c6af37f087bf.svg" width=100>
-    </picture>
-  </a>
-  <a href="https://railway.app/template/gkU-27?referralCode=-Yg50p">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://railway.app/brand/logo-light.svg">
-      <source media="(prefers-color-scheme: light)" srcset="https://railway.app/brand/logo-dark.svg">
-      <img alt="Railway logo" src="https://railway.app/brand/logo-light.svg" width=100>
-    </picture>
+  <a href="https://boxncase.com">
+    <img alt="BoxNCase logo" src="https://raw.githubusercontent.com/bnc-ss/assets/main/BoxNCase.svg" width=200>
   </a>
 </p>
 
 <h2 align="center">
-  Prebaked medusajs 2.0 monorepo
+  BoxNCase B2B Marketplace
 </h2>
 <h4 align="center">
-  Backend + Storefront + postgres + redis + MinIO + MeiliSearch
+  Complete B2B E-commerce Platform with Company Management, Approval Workflows, and Quote System
+</h4>
+<h4 align="center">
+  Backend + Storefront + postgres + redis + MinIO + MeiliSearch + B2B Extensions
 </h4>
 
 <h2 align="center">
@@ -34,10 +26,17 @@
 <p align="center">
 Combine Medusa's modules for your commerce backend with the newest Next.js 14 features for a performant storefront.</p>
 
-## About this boilerplate
-This boilerplate is a monorepo consisting of the officially released MedusaJS 2.0 backend and storefront application. It is a pre-configured, ready-to-deploy solution, modified for seamless deployment on [railway.app](https://railway.app?referralCode=-Yg50p).
+## About BoxNCase B2B Marketplace
+BoxNCase is a comprehensive B2B e-commerce platform built on MedusaJS 2.0, featuring advanced B2B functionality including company management, approval workflows, and quote systems. This Railway-optimized deployment includes all the power of Medusa with enterprise B2B features.
 
-Updated: to `version 2.8.8` 🥳
+### B2B Features
+- **Company Management**: Multi-buyer company accounts with role-based access
+- **Approval Workflows**: Customizable approval chains for orders and quotes
+- **Quote System**: Request and manage quotes with automated workflows
+- **Marketplace**: Multi-vendor support with seller dashboards
+- **Advanced Modules**: Reviews, wishlists, attributes, commissions, and more
+
+Based on MedusaJS `version 2.8.8` with BoxNCase B2B Extensions
 
 ## Preconfigured 3rd party integrations
 

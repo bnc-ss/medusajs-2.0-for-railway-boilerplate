@@ -1,0 +1,1 @@
+{"version":3,"file":"new-seller-invitation.d.ts","sourceRoot":"","sources":["../../src/email-templates/new-seller-invitation.tsx"],"names":[],"mappings":"AAAA,UAAU,kBAAkB;IAC1B,IAAI,EAAE;QACJ,GAAG,EAAE,MAAM,CAAA;KACZ,CAAA;CACF;AAED,eAAO,MAAM,4BAA4B,EAAE,KAAK,CAAC,EAAE,CAAC,QAAQ,CAAC,kBAAkB,CAAC,CAiD/E,CAAA"}

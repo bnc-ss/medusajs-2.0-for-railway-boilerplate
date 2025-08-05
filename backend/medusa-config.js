@@ -132,7 +132,28 @@ const medusaConfig = {
           },
         ],
       },
-    }] : [])
+    }] : []),
+    // BoxNCase B2B Modules
+    { resolve: './src/modules/company' },
+    { resolve: './src/modules/approval' },
+    { resolve: './src/modules/quote' },
+    
+    // BoxNCase Marketplace Modules
+    { resolve: './src/modules/seller' },
+    { resolve: './src/modules/reviews' },
+    { resolve: './src/modules/marketplace' },
+    { resolve: './src/modules/configuration' },
+    { resolve: './src/modules/order-return-request' },
+    { resolve: './src/modules/requests' },
+    { resolve: './src/modules/brand' },
+    { resolve: './src/modules/wishlist' },
+    { resolve: './src/modules/split-order-payment' },
+    { resolve: './src/modules/attribute' },
+    { resolve: './src/modules/taxcode' },
+    { resolve: './src/modules/commission' },
+    { resolve: './src/modules/payout' },
+    { resolve: './src/modules/algolia' },
+    { resolve: './src/modules/payment-stripe-connect' }
   ],
   plugins: [
   ...(MEILISEARCH_HOST && MEILISEARCH_ADMIN_KEY ? [{

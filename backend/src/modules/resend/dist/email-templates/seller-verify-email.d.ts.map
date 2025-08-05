@@ -1,0 +1,1 @@
+{"version":3,"file":"seller-verify-email.d.ts","sourceRoot":"","sources":["../../src/email-templates/seller-verify-email.tsx"],"names":[],"mappings":"AAAA,UAAU,kBAAkB;IAC1B,IAAI,EAAE;QACN,SAAS,EAAE,MAAM,CAAA;QACjB,IAAI,EAAE,MAAM,CAAA;KACZ,CAAA;CACD;AAED,eAAO,MAAM,8BAA8B,EAAE,KAAK,CAAC,EAAE,CAAC,QAAQ,CAAC,kBAAkB,CAAC,CAoBjF,CAAA"}

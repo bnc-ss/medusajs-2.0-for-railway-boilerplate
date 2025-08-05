@@ -1,0 +1,9 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.SellerOrderShippingEmailTemplate = void 0;
+const jsx_runtime_1 = require("react/jsx-runtime");
+const SellerOrderShippingEmailTemplate = ({ data }) => {
+    return ((0, jsx_runtime_1.jsxs)("div", { children: [(0, jsx_runtime_1.jsxs)("h1", { children: ["The order #", data.order.display_id, " has been marked as shipped."] }), (0, jsx_runtime_1.jsx)("p", { children: (0, jsx_runtime_1.jsxs)("div", { children: [(0, jsx_runtime_1.jsx)("p", { children: (0, jsx_runtime_1.jsx)("strong", { children: "Delivery Address:" }) }), (0, jsx_runtime_1.jsxs)("p", { children: [data.order.shipping_address.first_name, " ", data.order.shipping_address.last_name, ",", (0, jsx_runtime_1.jsx)("br", {}), data.order.shipping_address?.company ? `${data.order.shipping_address.company}, ` : '', data.order.shipping_address.address_1, data.order.shipping_address.address_2, ", ", data.order.shipping_address.postal_code, ' ', data.order.shipping_address.city, data.order.shipping_address.province ? `, ${data.order.shipping_address.province}` : '', (0, jsx_runtime_1.jsx)("br", {}), data.order.email, ", ", data.order.shipping_address.phone] })] }) }), (0, jsx_runtime_1.jsx)("p", { children: "Thank you for updating the status of the order. If you have any questions, please contact our support team." }), (0, jsx_runtime_1.jsxs)("div", { style: { marginTop: 32 }, children: [(0, jsx_runtime_1.jsx)("div", { children: "Best regards," }), (0, jsx_runtime_1.jsx)("div", { style: { fontWeight: 600 }, children: "The Mercur Team" }), (0, jsx_runtime_1.jsx)("div", { style: { color: '#888', marginTop: 4 }, children: "mercurjs.com" })] })] }));
+};
+exports.SellerOrderShippingEmailTemplate = SellerOrderShippingEmailTemplate;
+//# sourceMappingURL=seller-shipping-order.js.map

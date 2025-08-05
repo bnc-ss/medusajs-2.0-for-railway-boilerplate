@@ -1,0 +1,1 @@
+{"root":["../src/index.ts","../src/service.ts","../src/migrations/migration20250617080244.ts","../src/migrations/migration20250620110849.ts","../src/models/attribute-possible-value.ts","../src/models/attribute-value.ts","../src/models/attribute.ts"],"version":"5.8.2"}

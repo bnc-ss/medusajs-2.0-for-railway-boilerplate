@@ -1,0 +1,1 @@
+{"version":3,"file":"buyer-account-created.d.ts","sourceRoot":"","sources":["../../src/email-templates/buyer-account-created.tsx"],"names":[],"mappings":"AAAA,UAAU,kBAAkB;IAC1B,IAAI,EAAE;QACJ,SAAS,EAAE,MAAM,CAAC;KACnB,CAAC;CACH;AAED,eAAO,MAAM,gCAAgC,EAAE,KAAK,CAAC,EAAE,CACrD,QAAQ,CAAC,kBAAkB,CAAC,CA6C7B,CAAC"}
