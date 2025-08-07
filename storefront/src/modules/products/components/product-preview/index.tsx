@@ -4,15 +4,18 @@ import { Text, clx } from "@medusajs/ui"
 import LocalizedClientLink from "@/modules/common/components/localized-client-link"
 import Thumbnail from "../thumbnail"
 import PreviewPrice from "./price"
+import { B2BCustomer } from "@/types"
 
 export default async function ProductPreview({
   product,
   isFeatured,
   region,
+  customer,
 }: {
   product: HttpTypes.StoreProduct
   isFeatured?: boolean
   region: HttpTypes.StoreRegion
+  customer?: B2BCustomer | null
 }) {
   if (!product) {
     return null
@@ -46,8 +49,16 @@ export default async function ProductPreview({
           </Text>
         </div>
         <div className="flex flex-col gap-0">
-          {cheapestPrice && <PreviewPrice price={cheapestPrice} />}
-          <Text className="text-neutral-600 text-[0.5rem] small:text-[0.6rem]">Excl. VAT</Text>
+          {customer ? (
+            <>
+              {cheapestPrice && <PreviewPrice price={cheapestPrice} />}
+              <Text className="text-neutral-600 text-[0.5rem] small:text-[0.6rem]">Excl. VAT</Text>
+            </>
+          ) : (
+            <LocalizedClientLink href="/account/login" className="text-ui-fg-interactive hover:text-ui-fg-interactive-hover">
+              <Text className="text-sm font-medium">Login to see prices</Text>
+            </LocalizedClientLink>
+          )}
         </div>
         <div className="flex justify-between items-center">
           <div className="flex flex-row gap-1 items-center">

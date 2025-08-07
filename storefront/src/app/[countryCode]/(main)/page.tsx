@@ -1,4 +1,5 @@
 import { listRegions } from "@/lib/data/regions"
+import { retrieveCustomer } from "@/lib/data/customer"
 import FeaturedProducts from "@/modules/home/components/featured-products"
 import Hero from "@/modules/home/components/hero"
 import FeaturedIn from "@/modules/home/components/featured-in"
@@ -37,6 +38,7 @@ export default async function Home(props: {
   const params = await props.params
 
   const { countryCode } = params
+  const customer = await retrieveCustomer().catch(() => null)
 
   return (
     <div className="flex flex-col">
@@ -49,7 +51,7 @@ export default async function Home(props: {
       <IngredientsProcess />
       <Collaborations />
       <Suspense fallback={<SkeletonFeaturedProducts />}>
-        <FeaturedProducts countryCode={countryCode} />
+        <FeaturedProducts countryCode={countryCode} customer={customer} />
       </Suspense>
     </div>
   )

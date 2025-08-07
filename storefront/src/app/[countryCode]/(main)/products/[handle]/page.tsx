@@ -1,5 +1,6 @@
 import { sdk } from "@/lib/config"
 import { getAuthHeaders } from "@/lib/data/cookies"
+import { retrieveCustomer } from "@/lib/data/customer"
 import { getProductByHandle } from "@/lib/data/products"
 import { getRegion, listRegions } from "@/lib/data/regions"
 import ProductTemplate from "@/modules/products/templates"
@@ -62,10 +63,10 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
   }
 
   return {
-    title: `${product.title} | myBoxNCase Store`,
+    title: `${product.title} | Monty's B2B Portal`,
     description: `${product.title}`,
     openGraph: {
-      title: `${product.title} | myBoxNCase Store`,
+      title: `${product.title} | Monty's B2B Portal`,
       description: `${product.title}`,
       images: product.thumbnail ? [product.thumbnail] : [],
     },
@@ -85,11 +86,14 @@ export default async function ProductPage(props: Props) {
     notFound()
   }
 
+  const customer = await retrieveCustomer().catch(() => null)
+
   return (
     <ProductTemplate
       product={pricedProduct}
       region={region}
       countryCode={params.countryCode}
+      customer={customer}
     />
   )
 }

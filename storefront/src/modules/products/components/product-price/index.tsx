@@ -1,15 +1,27 @@
 import { clx, Text } from "@medusajs/ui"
 import { getProductPrice } from "@/lib/util/get-product-price"
 import { HttpTypes } from "@medusajs/types"
+import { B2BCustomer } from "@/types"
+import LocalizedClientLink from "@/modules/common/components/localized-client-link"
 
 export default function ProductPrice({
   product,
+  customer,
 }: {
   product: HttpTypes.StoreProduct
+  customer?: B2BCustomer | null
 }) {
   const { cheapestPrice } = getProductPrice({
     product,
   })
+
+  if (!customer) {
+    return (
+      <LocalizedClientLink href="/account/login" className="text-ui-fg-interactive hover:text-ui-fg-interactive-hover">
+        <Text className="text-xl font-medium">Login to see prices</Text>
+      </LocalizedClientLink>
+    )
+  }
 
   if (!cheapestPrice) {
     return <div className="block w-32 h-9 bg-gray-100 animate-pulse" />
