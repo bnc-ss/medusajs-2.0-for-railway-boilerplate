@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Eye, EyeOff } from '@medusajs/icons';
+import { EyeMini, EyeSlashMini } from '@medusajs/icons';
 
 // --- HELPER COMPONENTS (ICONS) ---
 
@@ -103,7 +103,7 @@ export const SignInPage: React.FC<SignInPageProps> = ({
                       required
                     />
                     <button type="button" onClick={() => setShowPassword(!showPassword)} className="absolute inset-y-0 right-3 flex items-center">
-                      {showPassword ? <EyeOff className="w-5 h-5 text-ui-fg-muted hover:text-ui-fg-base transition-colors" /> : <Eye className="w-5 h-5 text-ui-fg-muted hover:text-ui-fg-base transition-colors" />}
+                      {showPassword ? <EyeSlashMini className="w-5 h-5 text-ui-fg-muted hover:text-ui-fg-base transition-colors" /> : <EyeMini className="w-5 h-5 text-ui-fg-muted hover:text-ui-fg-base transition-colors" />}
                     </button>
                   </div>
                 </GlassInputWrapper>
