@@ -1,14 +1,7 @@
 import { defineWidgetConfig } from "@medusajs/admin-sdk"
-import { useEffect } from "react"
 
 const LoginBrandingWidget = () => {
-  useEffect(() => {
-    // Redirect to our custom login page
-    if (window.location.pathname === "/app/login") {
-      window.location.href = "/app/access"
-    }
-  }, [])
-
+  // This widget is no longer needed since we're overriding the login route directly
   return null
 }
 

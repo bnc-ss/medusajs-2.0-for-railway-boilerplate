@@ -1,8 +1,6 @@
 import { SignInPage, Testimonial } from "../../components/ui/sign-in"
-import { useNavigate } from "react-router-dom"
 import { useState } from "react"
 import { toast } from "@medusajs/ui"
-import { client } from "../../lib/client"
 
 const sampleTestimonials: Testimonial[] = [
   {
@@ -25,8 +23,7 @@ const sampleTestimonials: Testimonial[] = [
   },
 ];
 
-const AccessPage = () => {
-  const navigate = useNavigate()
+const LoginPage = () => {
   const [isLoading, setIsLoading] = useState(false)
 
   const handleSignIn = async (event: React.FormEvent<HTMLFormElement>) => {
@@ -68,7 +65,7 @@ const AccessPage = () => {
   }
   
   const handleResetPassword = () => {
-    navigate("/app/reset-password")
+    window.location.href = "/app/reset-password"
   }
 
   const handleCreateAccount = () => {
@@ -95,4 +92,4 @@ const AccessPage = () => {
   )
 }
 
-export default AccessPage
+export default LoginPage
