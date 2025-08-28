@@ -126,7 +126,7 @@ try {
   if (CHUNK_1) {
     let lines = readFileAsLines(CHUNK_1);
     for (let i = 0; i < lines.length; i++) {
-      lines[i] = lines[i].replace(/Welcome to Medusa/g, "Welcome to myBoxNCase");
+      lines[i] = lines[i].replace(/Welcome to Medusa/g, "Welcome to BoxNCase Partners");
     }
     writeFile(lines, CHUNK_1);
   } else {

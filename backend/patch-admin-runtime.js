@@ -65,7 +65,7 @@ const findChunkFileByContainingText = (text) => {
 };
 
 try {
-  // 1) Welcome to Medusa -> Welcome to myBoxNCase (search ALL files)
+  // 1) Welcome to Medusa -> Welcome to BoxNCase Partners (search ALL files)
   console.log("🔍 Looking for 'Welcome to Medusa' text in ALL files...");
   const allFiles = fs.readdirSync(dashboardDistPath);
   const jsFiles = allFiles.filter(file => file.endsWith('.mjs') || file.endsWith('.js'));
@@ -81,7 +81,7 @@ try {
         foundWelcomeFiles.push(filePath);
         
         // Replace the text
-        const updatedContent = content.replace(/Welcome to Medusa/g, "Welcome to myBoxNCase");
+        const updatedContent = content.replace(/Welcome to Medusa/g, "Welcome to BoxNCase Partners");
         fs.writeFileSync(filePath, updatedContent, "utf8");
         console.log(`✓ Updated 'Welcome to Medusa' in: ${fileName}`);
       }
@@ -103,7 +103,7 @@ try {
         const content = fs.readFileSync(filePath, "utf8");
         if (content.includes("Welcome to Medusa")) {
           console.log(`✓ Found 'Welcome to Medusa' in CSS: ${fileName}`);
-          const updatedContent = content.replace(/Welcome to Medusa/g, "Welcome to myBoxNCase");
+          const updatedContent = content.replace(/Welcome to Medusa/g, "Welcome to BoxNCase Partners");
           fs.writeFileSync(filePath, updatedContent, "utf8");
           console.log(`✓ Updated 'Welcome to Medusa' in CSS: ${fileName}`);
         }
