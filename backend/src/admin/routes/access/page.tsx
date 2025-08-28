@@ -1,4 +1,4 @@
-import { SignInPage, Testimonial } from "@/admin/components/ui/sign-in"
+import { SignInPage, Testimonial } from "../../components/ui/sign-in"
 import { useNavigate } from "react-router-dom"
 import { useState } from "react"
 import { toast } from "@medusajs/ui"
