@@ -15,7 +15,7 @@ type Props = {
   regions: HttpTypes.StoreRegion[]
 }
 
-interface FormData {
+interface RegisterFormData {
   email: string
   first_name: string
   last_name: string
@@ -29,7 +29,7 @@ interface FormData {
   currency_code: string
 }
 
-const initialFormData: FormData = {
+const initialFormData: RegisterFormData = {
   email: "",
   first_name: "",
   last_name: "",
@@ -62,14 +62,14 @@ const Register = ({ setCurrentView, regions }: Props) => {
   const [message, setMessage] = useState(null)
   const [isPending, startTransition] = useTransition()
   
-  const formAction = async (formData: FormData) => {
+  const formAction = async (nativeFormData: FormData) => {
     startTransition(async () => {
-      const result = await signup(null, formData)
+      const result = await signup(null, nativeFormData)
       setMessage(result)
     })
   }
   const [termsAccepted, setTermsAccepted] = useState(false)
-  const [formData, setFormData] = useState<FormData>(initialFormData)
+  const [formData, setFormData] = useState<RegisterFormData>(initialFormData)
 
   const handleChange = (
     e: ChangeEvent<HTMLInputElement | HTMLSelectElement>
@@ -81,7 +81,7 @@ const Register = ({ setCurrentView, regions }: Props) => {
     }))
   }
 
-  const handleSelectChange = (name: keyof FormData) => (value: string) => {
+  const handleSelectChange = (name: keyof RegisterFormData) => (value: string) => {
     setFormData((prev) => ({
       ...prev,
       [name]: value,
