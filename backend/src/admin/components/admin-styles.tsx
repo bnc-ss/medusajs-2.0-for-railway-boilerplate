@@ -32,6 +32,78 @@ export const AdminCustomStyles = () => {
       [class*="changelog"] {
         display: none !important;
       }
+
+      /* Sign-in page animations */
+      @keyframes fadeSlideIn {
+        to {
+          opacity: 1;
+          filter: blur(0px);
+          transform: translateY(0px);
+        }
+      }
+
+      @keyframes slideRightIn {
+        to {
+          opacity: 1;
+          filter: blur(0px);
+          transform: translateX(0px);
+        }
+      }
+
+      @keyframes testimonialIn {
+        to {
+          opacity: 1;
+          filter: blur(0px);
+          transform: translateY(0px) scale(1);
+        }
+      }
+
+      .animate-element {
+        opacity: 0;
+        filter: blur(4px);
+        transform: translateY(20px);
+        animation: fadeSlideIn 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+      }
+
+      .animate-slide-right {
+        opacity: 0;
+        filter: blur(4px);
+        transform: translateX(40px);
+        animation: slideRightIn 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+      }
+
+      .animate-testimonial {
+        opacity: 0;
+        filter: blur(4px);
+        transform: translateY(20px) scale(0.95);
+        animation: testimonialIn 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+      }
+
+      .animate-delay-100 { animation-delay: 0.1s; }
+      .animate-delay-200 { animation-delay: 0.2s; }
+      .animate-delay-300 { animation-delay: 0.3s; }
+      .animate-delay-400 { animation-delay: 0.4s; }
+      .animate-delay-500 { animation-delay: 0.5s; }
+      .animate-delay-600 { animation-delay: 0.6s; }
+      .animate-delay-700 { animation-delay: 0.7s; }
+      .animate-delay-800 { animation-delay: 0.8s; }
+      .animate-delay-900 { animation-delay: 0.9s; }
+      .animate-delay-1000 { animation-delay: 1s; }
+      .animate-delay-1200 { animation-delay: 1.2s; }
+      .animate-delay-1400 { animation-delay: 1.4s; }
+
+      /* Custom checkbox styles */
+      .custom-checkbox {
+        width: 1rem;
+        height: 1rem;
+        border-radius: 0.25rem;
+        border: 1px solid rgb(209 213 219);
+        color: rgb(124 58 237);
+      }
+      
+      .custom-checkbox:focus {
+        ring-color: rgb(139 92 246);
+      }
     `
     document.head.appendChild(style)
 
