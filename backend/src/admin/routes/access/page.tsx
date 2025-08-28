@@ -2,7 +2,7 @@ import { SignInPage, Testimonial } from "../../components/ui/sign-in"
 import { useNavigate } from "react-router-dom"
 import { useState } from "react"
 import { toast } from "@medusajs/ui"
-import { client } from "@/admin/lib/client"
+import { client } from "../../lib/client"
 
 const sampleTestimonials: Testimonial[] = [
   {
