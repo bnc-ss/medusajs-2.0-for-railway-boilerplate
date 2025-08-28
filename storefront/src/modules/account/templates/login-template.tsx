@@ -17,20 +17,20 @@ const sampleTestimonials: Testimonial[] = [
   {
     avatarSrc: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&q=80",
     name: "Sarah Chen",
-    handle: "@sarahdigital",
-    text: "Amazing shopping experience! The checkout process is seamless and the products are exactly as described."
+    handle: "@chenelectronics",
+    text: "BoxNCase has streamlined our B2B operations. The vendor dashboard is intuitive and saves us hours daily."
   },
   {
     avatarSrc: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&q=80",
     name: "Marcus Johnson",
-    handle: "@marcustech",
-    text: "This store has transformed how I shop. Clean design, fast shipping, and excellent customer support."
+    handle: "@techsupplyco",
+    text: "As a vendor partner, the platform has transformed how we manage inventory and process bulk orders."
   },
   {
     avatarSrc: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&q=80",
     name: "Emily Martinez",
-    handle: "@emilycreates",
-    text: "I've tried many online stores, but this one stands out. Quality products and genuinely helpful service."
+    handle: "@industrialparts",
+    text: "The B2B features and vendor tools have made BoxNCase our primary distribution platform. Highly recommend!"
   },
 ];
 
@@ -115,10 +115,10 @@ const LoginTemplate = ({ regions }: { regions: HttpTypes.StoreRegion[] }) => {
     <SignInPage
       title={
         <span className="font-light text-neutral-950 tracking-tighter">
-          Log in for faster<br />checkout.
+          Welcome to BoxNCase Partners
         </span>
       }
-      description="Access your account and continue shopping with us"
+      description="Access your vendor dashboard and manage your business"
       heroImageSrc="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=2160&q=80"
       testimonials={sampleTestimonials}
       onSignIn={handleSignIn}
