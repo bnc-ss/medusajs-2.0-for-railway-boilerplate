@@ -1,4 +1,4 @@
-import { Container, Heading, Text } from "@medusajs/ui"
+import { Container, Heading, Text, Button } from "@medusajs/ui"
 
 const BoxNCaseAIPage = () => {
   return (
@@ -12,14 +12,16 @@ const BoxNCaseAIPage = () => {
       
       <div className="mt-8">
         <div className="bg-ui-bg-subtle rounded-lg p-6">
-          <Heading level="h2" className="mb-4">Coming Soon</Heading>
-          <Text>
-            BoxNCaseAI Marketer integration is coming soon. This will provide AI-powered 
-            marketing tools and automation for your B2B e-commerce platform.
+          <Heading level="h2" className="mb-4">Discover BoxNCaseAI Marketer</Heading>
+          <Text className="mb-4">
+            BoxNCaseAI Marketer provides powerful AI-driven marketing tools and automation 
+            designed specifically for your B2B e-commerce platform.
           </Text>
-          <Text className="mt-4">
-            Contact your administrator for early access to this feature.
-          </Text>
+          <a href="https://marketing.boxncase.com" target="_blank" rel="noopener noreferrer" className="inline-block">
+            <Button variant="primary">
+              Visit Marketing Portal
+            </Button>
+          </a>
         </div>
       </div>
     </Container>

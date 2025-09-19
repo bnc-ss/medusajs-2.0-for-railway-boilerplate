@@ -33,7 +33,7 @@ const customRouteConfig = defineRouteConfig({
     {
       path: "/boxncase-ai",
       page: () => import("./routes/boxncase-ai/page"),
-      label: "BoxNCaseAI Marketer (Request Access)",
+      label: "BoxNCaseAI Marketer",
     },
   ],
   widgets: [

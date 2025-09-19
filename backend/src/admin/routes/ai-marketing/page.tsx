@@ -26,11 +26,11 @@ const AIMarketingPage = () => {
             <Text className="text-ui-fg-subtle mb-4">
               Create compelling product descriptions and marketing copy with AI
             </Text>
-            <Link to="/app/ai-marketing/request-access">
+            <a href="https://marketing.boxncase.com" target="_blank" rel="noopener noreferrer">
               <Button variant="secondary" className="w-full">
-                Request Access
+                Learn More
               </Button>
-            </Link>
+            </a>
           </div>
 
           {/* Smart Campaign Optimizer Card */}
@@ -42,11 +42,11 @@ const AIMarketingPage = () => {
             <Text className="text-ui-fg-subtle mb-4">
               Optimize your email campaigns with AI-driven insights
             </Text>
-            <Link to="/app/ai-marketing/request-access">
+            <a href="https://marketing.boxncase.com" target="_blank" rel="noopener noreferrer">
               <Button variant="secondary" className="w-full">
-                Request Access
+                Learn More
               </Button>
-            </Link>
+            </a>
           </div>
 
           {/* Predictive Analytics Card */}
@@ -58,20 +58,25 @@ const AIMarketingPage = () => {
             <Text className="text-ui-fg-subtle mb-4">
               Forecast trends and customer behavior with AI analytics
             </Text>
-            <Link to="/app/ai-marketing/request-access">
+            <a href="https://marketing.boxncase.com" target="_blank" rel="noopener noreferrer">
               <Button variant="secondary" className="w-full">
-                Request Access
+                Learn More
               </Button>
-            </Link>
+            </a>
           </div>
         </div>
 
         <div className="mt-8 rounded-lg bg-ui-bg-subtle p-6">
-          <Heading level="h2" className="mb-3">Coming Soon</Heading>
-          <Text className="text-ui-fg-subtle">
-            Our AI Marketing suite is currently in beta. Request access to be among the first vendors 
-            to leverage these powerful tools for your business growth.
+          <Heading level="h2" className="mb-3">Learn More About AI Marketing</Heading>
+          <Text className="text-ui-fg-subtle mb-4">
+            Discover how our AI Marketing suite can help transform your business with powerful 
+            tools designed for growth and efficiency.
           </Text>
+          <a href="https://marketing.boxncase.com" target="_blank" rel="noopener noreferrer">
+            <Button variant="primary">
+              Visit Marketing Portal
+            </Button>
+          </a>
         </div>
       </div>
     </Container>
